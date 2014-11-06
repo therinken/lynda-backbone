@@ -11,8 +11,11 @@
             {url: "./bower_components/backbone/backbone.js"},
             {url: "./bower_components/pathjs/path.min.js"},
             {url: "./js/models/singleFlowerModel.js"},
-            {url: "./js/flowerApp.js"},
-            {url: "./js/collections/allFlowers.js"}    
+            {url: "./js/views/singleFlowerView.js"},
+            {url: "./js/views/allFlowersView.js"},
+            {url: "./js/collections/allFlowers.js"},
+            {url: "./js/flowerApp.js"}
+                
         ).then(function(){
             _.templateSettings.interpolate = /{([\s\S]+?)}/g;
 
