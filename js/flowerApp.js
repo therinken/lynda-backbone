@@ -1,3 +1,5 @@
+var singleFlower = Backbone.Model.extend ({});
+
 var redRoses = new singleFlower({
 	name: "Red Roses",
 	price: 39.95,
