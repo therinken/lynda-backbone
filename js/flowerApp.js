@@ -19,5 +19,3 @@ var heirloomRoses = new singleFlower({
 	img: "images/heirloomRoses.jpg",
 	link: "heirloomRose"
 });
-
-rainbowRoses.set('price', 20);
