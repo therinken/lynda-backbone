@@ -1,6 +1,6 @@
 var singleFlower = Backbone.Model.extend({});
 var FlowersCollection = Backbone.Collection.extend({});
-var AllFlowersView = Backbone.View.extend({});
+var allFlowersView = Backbone.View.extend({});
 
 var redRoses = new singleFlower({
     name: "Red Roses",
@@ -20,29 +20,15 @@ var rainbowRoses = new singleFlower({
 var heirloomRoses = new singleFlower({
     name: "Heirloom Roses",
     price: 19.95,
-    img: "./images/heirloomRoses.jpg",
+    img: "./images/heirloomPinkRoses.jpg",
     link: "heirloomRose"
 });
 
-var tantalizingTulips = new singleFlower({
-    name: "Tantalizing Tulips",
-    price: 15.98,
-    color: "purple"
-});
-
-var fleurDeLis = new singleFlower({
-    name: "Fleur-de-lis",
-    price: 25.50,
-    color: "white",
-    originCountry: "Holland"
-});
-
 var flowerGroup = new FlowersCollection([
-    redRoses, rainbowRoses, heirloomRoses, 
-    tantalizingTulips, fleurDeLis
+    redRoses, rainbowRoses, heirloomRoses
 ]);
 
-var flowerGroupView = new AllFlowersView({
+var flowerGroupView = new allFlowersView({
 	collection: flowerGroup
 });
 
