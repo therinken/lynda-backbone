@@ -1,4 +1,4 @@
-var allFlowersView = Backbone.View.extend({
+var AllFlowersView = Backbone.View.extend({
 
 	tagName: "section",
 
@@ -8,7 +8,7 @@ var allFlowersView = Backbone.View.extend({
 	},
 
 	addFlower: function(flower){
-		var flowerView = new singleFlowerView ({
+		var flowerView = new SingleFlowerView ({
 			model: flower 
 		});
 		this.$el.append(flowerView.render().el);

@@ -1,11 +1,11 @@
 
-var singleFlower = Backbone.Model.extend({});
+var SingleFlower = Backbone.Model.extend({});
 var FlowersCollection = Backbone.Collection.extend({});
-var allFlowersView = Backbone.View.extend({});
-var flowerRouter = Backbone.Router.extend({});
+var AllFlowersView = Backbone.View.extend({});
+var Router = Backbone.Router.extend({});
 
 
-var redRoses = new singleFlower({
+var redRoses = new SingleFlower({
     name: "Red Roses",
     price: 39.95,
     color: "Red",
@@ -13,14 +13,14 @@ var redRoses = new singleFlower({
     link: "redRose"
 });
 
-var rainbowRoses = new singleFlower({
+var rainbowRoses = new SingleFlower({
     name: "Rainbow Roses",
     price: 29.95,
     color: "orange",
     link: "rainbowRose"
 });
 
-var heirloomRoses = new singleFlower({
+var heirloomRoses = new SingleFlower({
     name: "Heirloom Roses",
     price: 19.95,
     img: "images/heirloomPinkRoses.jpg",
@@ -31,7 +31,7 @@ var flowerGroup = new FlowersCollection([
     redRoses, rainbowRoses, heirloomRoses
 ]);
 
-var flowerGroupView = new allFlowersView({
+var flowerGroupView = new AllFlowersView({
 	collection: flowerGroup
 });
 
