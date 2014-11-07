@@ -14,13 +14,13 @@
             {url: "./js/views/singleFlowerView.js"},
             {url: "./js/views/allFlowersView.js"},
             {url: "./js/collections/allFlowers.js"},
+            {url: "./js/routes/router.js"},
             {url: "./js/flowerApp.js"}
                 
         ).then(function(){
-            _.templateSettings.interpolate = /{([\s\S]+?)}/g;
+            _.templateSettings.interpolate = /\{([\s\S]+?)\}/g;
 
             // start app?
         });
 
     }
-    

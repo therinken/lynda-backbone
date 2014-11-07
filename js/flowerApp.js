@@ -1,12 +1,15 @@
+
 var singleFlower = Backbone.Model.extend({});
 var FlowersCollection = Backbone.Collection.extend({});
 var allFlowersView = Backbone.View.extend({});
+var flowerRouter = Backbone.Router.extend({});
+
 
 var redRoses = new singleFlower({
     name: "Red Roses",
     price: 39.95,
     color: "Red",
-    img: "./images/redRoses.jpg",
+    img: "images/redRoses.jpg",
     link: "redRose"
 });
 
@@ -20,7 +23,7 @@ var rainbowRoses = new singleFlower({
 var heirloomRoses = new singleFlower({
     name: "Heirloom Roses",
     price: 19.95,
-    img: "./images/heirloomPinkRoses.jpg",
+    img: "images/heirloomPinkRoses.jpg",
     link: "heirloomRose"
 });
 
@@ -33,3 +36,7 @@ var flowerGroupView = new allFlowersView({
 });
 
 $("#allFlowers").html(flowerGroupView.render().el);
+
+var flowerRouter = new Router();
+
+Backbone.history.start();
