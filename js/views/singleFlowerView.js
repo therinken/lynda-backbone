@@ -1,4 +1,6 @@
-var SingleFlowerView = Backbone.View.extend({
+var app = app || {};
+
+app.singleFlowerView = Backbone.View.extend({
 
 	tagName: "article",
 	className: "flowerListItem",

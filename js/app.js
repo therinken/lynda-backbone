@@ -1,8 +1,8 @@
 
-    window.onload = app;
+    window.onload = App;
 
     // runs when the DOM is loaded
-    function app(){
+    function App(){
 
         // load some scripts (uses promises :D)
         loader.load(

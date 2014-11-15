@@ -1,4 +1,6 @@
-var Router = Backbone.Router.extend({
+var app = app || {};
+
+app.Router = Backbone.Router.extend({
 
 	routes: {
 		"" : "noCopy",

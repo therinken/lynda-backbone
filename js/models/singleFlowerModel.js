@@ -1,4 +1,6 @@
-var SingleFlower = Backbone.Model.extend({
+var app = app || {};
+
+app.singleFlower = Backbone.Model.extend({
 	
 	defaults: {
 	color: "pink",

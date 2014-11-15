@@ -23,19 +23,19 @@
     </div>
 
     <script id="flowerElement" type="text/template">
-        <a href="#{link}"><img src="{img}" alt="{name}" class="image" /></a>
+        <a href="#<%= link %>"><img src="<%= img %>" alt="<%= name %>" class="image" /></a>
         <ul>
             <li class="flowerInfo">
                 <strong>Name:</strong>
-                {name}
+                <%= name %>
             </li>
             <li class="flowerInfo">
                 <strong>Price:</strong>
-                {price}
+                <%= price %>
             </li>
             <li class="flowerInfo">
                 <strong>Color:</strong>
-                {color}
+                <%= color %>
             </li>
         </ul>
     </script>
